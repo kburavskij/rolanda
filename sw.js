@@ -1,4 +1,4 @@
-const CACHE_NAME = "rolanda-static-v5";
+const CACHE_NAME = "rolanda-static-v6";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -35,7 +35,7 @@ self.addEventListener("fetch", (event) => {
 
   event.respondWith(
     caches.match(event.request).then((cached) => cached || fetch(event.request).then((response) => {
-      if (event.request.url.startsWith(self.location.origin)) {
+      if (response.ok && event.request.url.startsWith(self.location.origin)) {
         const copy = response.clone();
         caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
       }
