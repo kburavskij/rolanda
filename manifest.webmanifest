@@ -1,0 +1,12 @@
+{
+  "name": "Rolanda Aleknaite",
+  "short_name": "Rolanda",
+  "description": "Šviesos portalai. Rolanda Aleknaite.",
+  "lang": "lt",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#435c27",
+  "theme_color": "#435c27",
+  "icons": []
+}

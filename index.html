@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="lt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#435c27" />
+    <meta name="description" content="Rolanda Aleknaite. Šviesos portalai." />
+    <title>Rolanda Aleknaite</title>
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Pereiti prie pagrindinio turinio</a>
+
+    <header class="site-header" id="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#home" aria-label="Pradžia">RA</a>
+
+        <div class="header-actions">
+          <nav class="desktop-nav" aria-label="Pagrindinė navigacija">
+            <a class="nav-link" href="#darbai" data-section-link="darbai">Darbai</a>
+            <a class="nav-link" href="#apie" data-section-link="apie">Apie</a>
+            <a class="nav-link" href="#kontaktai" data-section-link="kontaktai">Kontaktai</a>
+          </nav>
+
+          <div class="language-picker">
+            <button
+              class="language-trigger"
+              type="button"
+              aria-expanded="false"
+              aria-controls="language-menu"
+              aria-label="Kalbos pasirinkimas: lietuvių"
+            >
+              <span class="language-code">LT</span>
+              <span class="language-chevron" aria-hidden="true"></span>
+            </button>
+            <div class="language-menu" id="language-menu" hidden>
+              <button type="button" class="language-option is-selected" data-language="LT">LT</button>
+              <button type="button" class="language-option" data-language="EN">EN</button>
+              <button type="button" class="language-option" data-language="RU">RU</button>
+            </div>
+          </div>
+
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+            aria-label="Atverti meniu"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Mobilioji navigacija" hidden>
+        <a class="mobile-nav-link" href="#darbai" data-section-link="darbai">Darbai</a>
+        <a class="mobile-nav-link" href="#apie" data-section-link="apie">Apie</a>
+        <a class="mobile-nav-link" href="#kontaktai" data-section-link="kontaktai">Kontaktai</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <h1 class="hero-kicker">ŠVIESOS PORTALAI</h1>
+          <p class="hero-name" id="hero-title">Rolanda Aleknaite</p>
+          <a class="scroll-cue" href="#darbai" aria-label="Slinkti į darbus">
+            <svg viewBox="0 0 12 42" aria-hidden="true" focusable="false">
+              <path d="M6 1v37M1.5 33.5 6 38l4.5-4.5" />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <section class="gallery-section" id="darbai" aria-labelledby="gallery-title">
+        <h2 class="visually-hidden" id="gallery-title">Darbai</h2>
+        <div class="gallery-inner">
+          <div class="gallery-row gallery-row-top">
+            <button class="gallery-card art-1" type="button" data-gallery-index="0" aria-label="Atidaryti darbo vietą 1">
+              <span class="placeholder-label">image placeholder</span>
+            </button>
+            <button class="gallery-card art-2" type="button" data-gallery-index="1" aria-label="Atidaryti darbo vietą 2">
+              <span class="placeholder-label">image placeholder</span>
+            </button>
+            <button class="gallery-card art-3" type="button" data-gallery-index="2" aria-label="Atidaryti darbo vietą 3">
+              <span class="placeholder-label">image placeholder</span>
+            </button>
+            <button class="gallery-card art-4" type="button" data-gallery-index="3" aria-label="Atidaryti darbo vietą 4">
+              <span class="placeholder-label">image placeholder</span>
+            </button>
+            <button class="gallery-card art-5" type="button" data-gallery-index="4" aria-label="Atidaryti darbo vietą 5">
+              <span class="placeholder-label">image placeholder</span>
+            </button>
+          </div>
+
+          <div class="gallery-row gallery-row-bottom">
+            <button class="gallery-card art-6" type="button" data-gallery-index="5" aria-label="Atidaryti darbo vietą 6">
+              <span class="placeholder-label">image placeholder</span>
+            </button>
+            <button class="gallery-card art-7" type="button" data-gallery-index="6" aria-label="Atidaryti darbo vietą 7">
+              <span class="placeholder-label">image placeholder</span>
+            </button>
+            <button class="gallery-card art-8" type="button" data-gallery-index="7" aria-label="Atidaryti darbo vietą 8">
+              <span class="placeholder-label">image placeholder</span>
+            </button>
+            <button class="gallery-card art-9" type="button" data-gallery-index="8" aria-label="Atidaryti darbo vietą 9">
+              <span class="placeholder-label">image placeholder</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section" id="apie" aria-labelledby="about-title">
+        <div class="about-inner">
+          <div class="about-placeholder" role="img" aria-label="Paveikslo vieta">
+            <span class="placeholder-label">image placeholder</span>
+          </div>
+
+          <div class="about-copy">
+            <h2 class="section-heading" id="about-title">Apie</h2>
+            <div class="about-body">
+              <p>
+                Galiu drąsiai sakyti, kad Jūs mane jau pažįstate, jei peržvelgėte paveikslus. Juos pradėjau tapyti būdama pakankamai subrendusi ir susiformavusi asmenybė, po daugelio metų ieškojimų sau atsakiusi į labai daug klausimų bei suvokusi savo vertybes.
+              </p>
+              <p>
+                Aš myliu Kūrėją ir jo kūrinius, o ypač Žmogų, todėl šitie paveikslai, gimę Meilėje, yra gyvi energetiniai darbai, nešantys harmoniją ir klestėjimą. Juos tapau, nes kitaip negaliu: tokiu būdu aš realizuoju savo sielos troškimą harmonizuoti ir struktūrizuoti aplinką, perduodant dieviškojo tobulumo kodus įvairiomis formomis. Tai būdinga visiems paveikslams, bet jau prieš pradedant kiekvieną iš jų žinau, kuri energija bus stipriau aktyvuojama. Ją nurodo paveikslo pavadinimas. Visi kūriniai gimsta pakankamai lėtai, bet kiekvienas užbaigtas yra atvira brangenybių skrynia, savo spindėjimu kviečianti stabtelti ir pasinerti į transformuojantį aukštųjų vibracijų pasaulį.
+              </p>
+            </div>
+
+            <div class="exhibitions">
+              <span>Įvykusios parodos</span>
+              <button type="button" class="text-link" data-show-exhibitions>čia.</button>
+              <span class="exhibition-message" role="status" aria-live="polite" hidden>Parodų sąrašas bus pridėtas.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="kontaktai" aria-labelledby="contact-title">
+        <h2 class="section-heading contact-heading" id="contact-title">Kontaktai</h2>
+
+        <div class="contact-inner">
+          <div class="contact-copy">
+            <p class="contact-intro">
+              Aš laukiu Jūsų laiško, jei turite klausimų dėl paveikslo įsigijimo* ar naujo užsakymo*:
+            </p>
+            <p class="contact-note">*paveikslai yra Lietuvoje, darbų kainos nuo 13 000 Eur.</p>
+            <div class="contact-details">
+              <a href="mailto:rolanda.aleknaite999@gmail.com?subject=Paveikslai">rolanda.aleknaite999@gmail.com</a>
+              <a href="tel:+37061601004">+37061601004</a>
+            </div>
+            <a class="instagram-link" href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 28 28" aria-hidden="true" focusable="false">
+                <rect x="1.25" y="1.25" width="25.5" height="25.5" rx="7" />
+                <circle cx="14" cy="14" r="5.25" />
+                <circle class="instagram-dot" cx="21" cy="7" r="1.15" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="form-wrap">
+            <form class="contact-form" id="contact-form">
+              <div class="field-row">
+                <div class="field">
+                  <label for="first-name">Vardas</label>
+                  <input id="first-name" name="vardas" type="text" autocomplete="given-name" />
+                </div>
+                <div class="field">
+                  <label for="last-name">Pavardė</label>
+                  <input id="last-name" name="pavardė" type="text" autocomplete="family-name" />
+                </div>
+              </div>
+
+              <div class="field-row">
+                <div class="field">
+                  <label for="email">El. paštas</label>
+                  <input id="email" name="email" type="email" autocomplete="email" required />
+                </div>
+                <div class="field">
+                  <label for="subject">Tema</label>
+                  <input id="subject" name="tema" type="text" />
+                </div>
+              </div>
+
+              <div class="field message-field">
+                <label for="message">Jūsų žinutė</label>
+                <textarea id="message" name="žinutė" rows="4"></textarea>
+              </div>
+
+              <button class="submit-button" type="submit">Siųsti</button>
+              <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">© 2024 by Rolanda Aleknaite</div>
+    </footer>
+
+    <div class="gallery-modal" id="gallery-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+      <div class="modal-backdrop" data-close-gallery></div>
+      <div class="modal-panel">
+        <button class="modal-close" type="button" data-close-gallery aria-label="Uždaryti">×</button>
+        <button class="modal-arrow modal-arrow-prev" type="button" data-gallery-prev aria-label="Ankstesnis darbas">‹</button>
+        <div class="modal-art art-1" id="modal-art">
+          <span class="modal-placeholder-label">image placeholder</span>
+        </div>
+        <button class="modal-arrow modal-arrow-next" type="button" data-gallery-next aria-label="Kitas darbas">›</button>
+        <div class="modal-caption">
+          <h2 id="modal-title">Darbas 1</h2>
+          <p id="modal-counter">1 / 9</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
