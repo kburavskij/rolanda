@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="lt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#435c27" />
+    <meta name="description" content="Rolanda Aleknaite. Kūrinio informacija." />
+    <title>Rolanda Aleknaite</title>
+    <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./art.css?v=4" />
+  </head>
+  <body class="art-page">
+    <a class="skip-link" href="#main-content">Pereiti prie pagrindinio turinio</a>
+
+    <header class="site-header" id="site-header">
+      <div class="header-inner">
+        <a class="brand" href="./" aria-label="Pradžia">RA</a>
+
+        <div class="header-actions">
+          <nav class="desktop-nav" aria-label="Pagrindinė navigacija">
+            <a class="nav-link" href="./#darbai" data-section-link="darbai">Darbai</a>
+            <a class="nav-link" href="./#apie" data-section-link="apie">Apie</a>
+            <a class="nav-link" href="./#kontaktai" data-section-link="kontaktai">Kontaktai</a>
+          </nav>
+
+          <div class="language-picker">
+            <button
+              class="language-trigger"
+              type="button"
+              aria-expanded="false"
+              aria-controls="language-menu"
+              aria-label="Kalbos pasirinkimas: lietuvių"
+            >
+              <span class="language-code">LT</span>
+              <span class="language-chevron" aria-hidden="true"></span>
+            </button>
+            <div class="language-menu" id="language-menu" hidden>
+              <button type="button" class="language-option is-selected" data-language="LT">LT</button>
+              <button type="button" class="language-option" data-language="EN">EN</button>
+              <button type="button" class="language-option" data-language="RU">RU</button>
+            </div>
+          </div>
+
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+            aria-label="Atverti meniu"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Mobilioji navigacija" hidden>
+        <a class="mobile-nav-link" href="./#darbai" data-section-link="darbai">Darbai</a>
+        <a class="mobile-nav-link" href="./#apie" data-section-link="apie">Apie</a>
+        <a class="mobile-nav-link" href="./#kontaktai" data-section-link="kontaktai">Kontaktai</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="art-detail-section" id="art-detail" aria-labelledby="art-title">
+        <div class="art-detail-inner" data-artwork-page>
+          <a class="art-back" href="./#darbai" aria-label="Grįžti į darbus">
+            <svg viewBox="0 0 34 24" aria-hidden="true" focusable="false">
+              <path d="M32 12H2M12 2 2 12l10 10" />
+            </svg>
+            <span>Grįžti į darbus</span>
+          </a>
+
+          <div class="art-gallery" aria-label="Kūrinio galerija">
+            <div class="art-thumbnails" id="art-thumbnails" aria-label="Kūrinio vaizdai"></div>
+
+            <div class="art-gallery-main">
+              <div class="piece-image art-main-image" id="art-main-image" role="img" aria-label="Kūrinio vaizdas">
+                <span class="piece-placeholder-label" id="art-main-label">image placeholder</span>
+              </div>
+              <button class="art-gallery-arrow art-gallery-prev" id="art-gallery-prev" type="button" aria-label="Ankstesnis vaizdas">←</button>
+              <button class="art-gallery-arrow art-gallery-next" id="art-gallery-next" type="button" aria-label="Kitas vaizdas">→</button>
+              <p class="art-gallery-count" id="art-gallery-count" aria-live="polite"></p>
+            </div>
+          </div>
+
+          <article class="art-info">
+            <h1 class="art-title" id="art-title">Kūrinys</h1>
+            <p class="art-materials" id="art-materials"></p>
+            <div class="art-related" id="art-related"></div>
+            <div class="art-price" id="art-price-block" hidden>
+              <span class="art-label">Kaina</span>
+              <span id="art-price"></span>
+            </div>
+            <p class="art-price-note" id="art-price-note" hidden>*Paveikslai yra Lietuvoje, darbų kainos nuo 13 000 Eur.</p>
+            <p class="art-status" id="art-status"></p>
+            <a class="art-contact" id="art-contact" href="./#kontaktai" hidden>Susisiekti</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">© 2024 by Rolanda Aleknaite</div>
+    </footer>
+
+    <script src="./script.js" defer></script>
+    <script src="./art.js" defer></script>
+  </body>
+</html>
