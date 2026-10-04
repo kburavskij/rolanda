@@ -1,10 +1,11 @@
-const CACHE_NAME = "rolanda-static-v3";
+const CACHE_NAME = "rolanda-static-v4";
 const APP_SHELL = [
   "./",
   "./index.html",
   "./styles.css",
   "./script.js",
-  "./manifest.webmanifest"
+  "./manifest.webmanifest",
+  "./icon.svg"
 ];
 
 self.addEventListener("install", (event) => {
